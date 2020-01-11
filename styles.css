@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: whitesmoke;
+    
+}
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #696969;
+    z-index: 1;
+}
+nav ul {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: 0;
+}
+nav li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+main {
+    position: relative;
+    width: 80%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15%;
+    z-index: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;   
+    font-weight: normal;
+    font-size: .75em;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    z-index: 1;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+}
+a:hover {
+    color: cornflowerblue;
+}
+hr {
+    width: 15%;
+    color: whitesmoke;
+}
+img {
+    padding: 0;
+    margin: 0;
+}
+#name {
+    font-weight: bold;
+    font-size: 2em;
+    color: cornflowerblue;
+}
+#links {
+    margin: auto auto;
+    width: 100%;
+}
+.spacer {
+    height: 100px;
+}
+#resume {
+    margin: auto auto;
+    text-align: left;
+    width: 100%;
+}
+#resume a {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+}
+#projects {
+    margin: auto auto;
+    width: 100%;
+}
+#projects img {
+    width: 45%;
+}
+#projects h3 {
+    padding: 0;
+    margin: 0;
+}
+#projects p {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    display: block;
+    text-align: center;
+}
+#contact {
+    margin: auto auto;
+    width: 100%;
+}
