@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1em;
     color: whitesmoke;
@@ -69,6 +69,7 @@ img {
     margin: 0;
 }
 #name {
+    font-family: 'Fondamento', cursive;
     font-weight: bold;
     font-size: 2em;
     color: cornflowerblue;
