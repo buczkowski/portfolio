@@ -81,34 +81,6 @@ img {
     margin: auto auto;
     width: 100%;
 }
-#contact textarea {
-    width: 75%;
-    border-radius: 2px;
-    padding: 10px;
-    background-color: whitesmoke;
-}
-#contact input {
-    border-radius: 2px;
-    padding: 5px 15px;
-    margin: 10px;
-    border: none;
-    background-color: #696969;
-    color: whitesmoke;
-}
-#contact input:hover {
-    color: cornflowerblue;
-}
-#resume {
-    margin: auto auto;
-    text-align: left;
-    width: 100%;
-}
-#resume a {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    display: block;
-    text-align: center;
-}
 #projects {
     margin: auto auto;
     width: 100%;
@@ -125,8 +97,4 @@ img {
     padding-top: 0px;
     display: block;
     text-align: center;
-}
-#contact {
-    margin: auto auto;
-    width: 100%;
 }
