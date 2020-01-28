@@ -1,10 +1,10 @@
 body {
-    background-color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    background: url("images/dark_wood.png") repeat;
+    /*background-position: 0% 0%;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     font-size: 1em;
     color: whitesmoke;
-    
 }
 nav {
     position: fixed;
@@ -12,7 +12,7 @@ nav {
     top: 0;
     width: 100%;
     text-align: center;
-    background-color: #696969;
+    background-color: black;
     z-index: 1;
 }
 nav ul {
@@ -37,7 +37,6 @@ main {
     margin-top: 15%;
     z-index: 0;
     box-sizing: border-box;
-    background-color: black;
 }
 footer {
     position: fixed;
@@ -69,17 +68,77 @@ img {
     margin: 0;
 }
 .spacer {
-    height: 100px;
+    height: 75px;
+}
+.flip-card {
+    margin: auto;
+    background-color: transparent;
+    width: 220px;
+    height: 120px;
+    perspective: 1000px;
+    display: inline-block;
+}
+.flip-card a:hover {
+    color: whitesmoke;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-back {    
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    transform: rotateY(180deg);
 }
 #name {
     font-family: 'Fondamento', cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.1em;
     color: cornflowerblue;
+    animation-name: name;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes name {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 #links {
     margin: auto auto;
     width: 100%;
+}
+#linkedin {
+    animation-name: linkedin;
+    animation-delay: 0s;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+@keyframes linkedin {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#github {
+    animation-name: github;
+    animation-delay: 0s;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+@keyframes github {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 #projects {
     margin: auto auto;
@@ -88,6 +147,12 @@ img {
 #projects img {
     width: 45%;
 }
+#projects img:hover, #projects img:active{
+    transform: scale(1.75);
+    transition: all 1.5s ease-in-out;
+    overflow: hidden;
+}
+
 #projects h3 {
     padding: 0;
     margin: 0;
