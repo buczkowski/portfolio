@@ -73,7 +73,7 @@ img {
 .flip-card {
     margin: auto;
     background-color: transparent;
-    width: 220px;
+    width: 180px;
     height: 120px;
     perspective: 1000px;
     display: inline-block;
@@ -120,13 +120,13 @@ img {
     transform: rotateY(180deg);
     /*z-index: 1;*/
 }
-#name {
+.name {
     font-family: 'Fondamento', cursive;
     font-weight: bold;
     font-size: 2.1em;
     color: cornflowerblue;
     animation-name: name;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 @keyframes name {
@@ -150,10 +150,19 @@ img {
 #github {
     animation-name: github;
     animation-delay: 0s;
-    animation-duration: 7s;
+    animation-duration: 8s;
     animation-fill-mode: forwards;
 }
 @keyframes github {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.title {
+    animation-name: title;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes title{ 
     0% {opacity: 0;}
     100% {opacity: 1;}
 }

@@ -21,44 +21,48 @@
         </ul>
     </nav>
     <main>
-        <p id="name">Phil Buczkowski</p>
+        <p class="name">Phil Buczkowski</p>
         <hr>
-        <p>Projects</p>
+        <p class="title">Projects</p>
         <div class="spacer"></div>
         <div id="projects">
             <a href=https://training.buczkowski.us><h3>training.buczkowski.us</h3></a>
             <p>
-                This application is a workout training log built with Express and Javascript. 
+                This application is a workout training log built with Node and Express. It uses 
+                JSON files for storage as it runs on a very small Linode instance. It uses 
+                authentication, paginates the output of the stored data and uses ejs for templating.  
             </p>
             <p><a href="https://github.com/buczkowski/training_log_app">Github Repository</a></p>
-            
-                <img
-                src="images/training_log_screenshot_big_microsoft-surfacepro4-front.png"
-                width="550"
-                alt="training.buczkowski.us Desktop">
-            
-                <img
-                src="images/training_log_screenshot_small_pixel_quite_black_portrait.png"
-                width="550"
-                alt="training.buczkowski.us Mobile">
-            
+            <img
+            src="images/training_log_screenshot_big_microsoft-surfacepro4-front.png"
+            width="550"
+            alt="training.buczkowski.us Desktop">
+            <img
+            src="images/training_log_screenshot_small_pixel_quite_black_portrait.png"
+            width="550"
+            alt="training.buczkowski.us Mobile">
+            <div class="spacer"></div>
             <a href="https://buczkowski.hopto.org"><h3>buczkowski.hopto.org</h3></a>
+            <p>
+                A personl home page of sorts, this site contains several links I use on a regular 
+                basis. It is more or less just a page for my most used bookmarks. There are some 
+                Javascript components used, one for the time and one to fetch weather data via 
+                Axios from an API.
+            </p>
             <p><a href="https://github.com/buczkowski/k8s_website">Github Repository</a></p>
-            
-                <img 
-                src="images/buczkowski_hopto_org_microsoft-surfacepro4-front.png" 
-                width="550" 
-                alt="buczkowski.hopto.org Desktop">
-            
-                <img 
-                src="images/buczkowski_hopto_org_mobile_pixel_quite_black_portrait.png"
-                width="550" 
-                alt="buczkowski.hopto.org Mobile">
-            
+            <img 
+            src="images/buczkowski_hopto_org_microsoft-surfacepro4-front.png" 
+            width="550" 
+            alt="buczkowski.hopto.org Desktop">
+            <img 
+            src="images/buczkowski_hopto_org_mobile_pixel_quite_black_portrait.png"
+            width="550" 
+            alt="buczkowski.hopto.org Mobile">
+            <div class="spacer"></div>
             <h3>Home Lab</h3>
             <p>    
-                The buczkowski.hopto.org website runs on the Kubernetes cluster in 
-                this diagram.
+                This is my home lab. The buczkowski.hopto.org website runs on the Kubernetes 
+                cluster in this diagram.
             </p>
             <p>
                 <a href="https://github.com/buczkowski/ansible_playbooks">
