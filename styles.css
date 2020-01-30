@@ -171,7 +171,13 @@ img {
     width: 100%;
 }
 #projects img {
-    width: 45%;
+    border: 1px solid whitesmoke;
+}
+.largeimg {
+    width: 63%
+}
+.smallimg {
+    width: 20%;
 }
 #projects img:active{
     transform: scale(1.75);
