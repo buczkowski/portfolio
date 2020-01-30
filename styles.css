@@ -164,7 +164,7 @@ img {
 #projects img {
     width: 45%;
 }
-#projects img:hover, #projects img:active{
+#projects img:active{
     transform: scale(1.75);
     transition: all 1.5s ease-in-out;
     overflow: hidden;
