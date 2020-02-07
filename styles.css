@@ -178,6 +178,10 @@ img {
 .smallimg {
     width: 20%;
 }
+.description {
+    margin: auto;
+    width: 85%;
+}
 #projects img:active{
     transform: scale(1.75);
     transition: all 1.5s ease-in-out;
