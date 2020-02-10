@@ -1,70 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phil Buczkowski</title>
-    <link href="https://fonts.googleapis.com/css?family=Fondamento|Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Phil Buczkowski</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
-    <main>
-        <p class="name">Phil Buczkowski</p>
-        <hr>
-        <p class="title">Systems Administrator / Web Developer</p>
-        <div class="spacer"></div>
-        <div id="links">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img 
-                            src="images/56-linkedin-128.png" 
-                            width="100"
-                            alt="LinkedIn"
-                            id="linkedin">
-                    </div>
-                    <div class="flip-card-back">
-                        <a href="https://www.linkedin.com/in/phil-buczkowski-3294b115b/">
-                            <p>Visit my LinkedIn profile</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img 
-                            src="images/71-github-128.png" 
-                            width="100"
-                            alt="GitHub"
-                            id="github">
-                    </div>
-                    <div class="flip-card-back">
-                        <a href="https://github.com/buczkowski">
-                            <p>Visit my Github profile</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <!--<a class="navbar-brand" href="#">Phil Buczkowski</a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section class="title">
+      <h1>Phil Buczkowski</h1>
+      <img src="images/web-development.png" alt="web-development-img">
+      <hr>
+      <p>
+        Systems Administrator / Web Developer
+      </p>
+    </section>
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <hr>
+      <div class="row">
+        <div class="col col-lg6">
+          <img src="images/coding.png" alt="coding-img">
+          <h3>Web Development</h3>
+          <p>
+            I create clean, responsive and functional websites, utilizing modern 
+            web standards.
+          </p>
         </div>
-        <div class="spacer"></div>
-    </main>
-    <footer>
-        <p>
-            Copyright &copy; 2020 Phil Buczkowski
-            <a href="mailto:phil@buczkowski.us">phil@buczkowski.us</a>
-        </p>
-    </footer>
+        <div class="col col-lg6">
+          <img src="images/wrench.png" alt="tools-img">
+          <h3>Systems Administration</h3>
+          <p>
+            I have over a decade of systems administration experience managing thousands 
+            of Linux servers. 
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <hr>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href=https://training.buczkowski.us><h4>training.buczkowski.us</h4></a>
+            <img src="images/training_log-site.png" alt="traininglog-img">
+            <p><a href="https://github.com/buczkowski/training_log_app">Github Repository</a></p>
+          </div>
+          <div class="carousel-item">
+            <a href="https://buczkowski.hopto.org"><h4>buczkowski.hopto.org</h4></a>
+            <img src="images/buczkowski_hopto_org-site.png" alt="buczkowski_hopto_org-img">
+            <p><a href="https://github.com/buczkowski/k8s_website">Github Repository</a></p>
+          </div>
+          <div class="carousel-item">
+            <h4>Home Lab</h4>
+            <img id="homelab" src="images/HomeNetworkDiagram.jpg" alt="homelab-img">
+            <p>
+              <a href="https://github.com/buczkowski/ansible_playbooks">
+                  GitHub Repository for Ansible
+              </a>
+            </p>
+            <p>
+                <a href="https://github.com/buczkowski/dotfiles">
+                    GitHub Repository for Configuration Files
+                </a>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <a href=https://www.buczkowski.us><h4>www.buczkowski.us</h4></a>
+            <img src="images/portfolio-site.png" alt="portfolio-img">
+            <p><a href="https://github.com/buczkowski/portfolio">Github Repository</a></p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <h2>Contact</h2>
+    <hr>
+    <a href="https://www.linkedin.com/in/phil-buczkowski-3294b115b/"><i class="fab fa-linkedin fa-3x"></i></a>
+    <a href="https://github.com/buczkowski"><i class="fab fa-github-square fa-3x"></i></a>
+    <a href="mailto:phil@buczkowski.us"><i class="fas fa-envelope-square fa-3x"></i></a>
+    <p>
+      Copyright &copy; 2020 Phil Buczkowski</p>
+      <p>
+        <a href="mailto:phil@buczkowski.us">phil@buczkowski.us</a>
+    </p>
+    <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <br>
+  </footer>
+  <script 
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+      crossorigin="anonymous">
+    </script>
 </body>
 </html>
